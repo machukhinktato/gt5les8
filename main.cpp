@@ -2,7 +2,8 @@
 #include <QDesktopWidget>
 #include <QTextEdit>
 #include "verticalbox.h"
-#include "buttons.h"
+//#include "buttons.h"
+#include "nesting.h"
 
 
 class Absolute : public QWidget {
@@ -21,11 +22,10 @@ int main(int argc, char *argv[]) {
 
 //    Absolute window;
 //    VerticalBox window;
-    Buttons window;
+//    Buttons window;
+    Layouts window;
 
-
-    window.resize(500,500);
-    window.setWindowTitle("Buttons");
+    window.setWindowTitle("Layouts");
     window.show();
 
     return app.exec();
