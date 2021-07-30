@@ -1,10 +1,10 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QTextEdit>
-#include "verticalbox.h"
+//#include "verticalbox.h"
 //#include "buttons.h"
-#include "nesting.h"
-
+//#include "nesting.h"
+#include "form.h"
 
 class Absolute : public QWidget {
 public:
@@ -23,9 +23,9 @@ int main(int argc, char *argv[]) {
 //    Absolute window;
 //    VerticalBox window;
 //    Buttons window;
-    Layouts window;
-
-    window.setWindowTitle("Layouts");
+//    Layouts window;
+    FormEx window;
+    window.setWindowTitle("Form example");
     window.show();
 
     return app.exec();
