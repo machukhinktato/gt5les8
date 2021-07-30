@@ -1,12 +1,12 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QTextEdit>
-//#include "verticalbox.h"
-//#include "buttons.h"
-//#include "nesting.h"
-//#include "form.h"
+#include "verticalbox.h"
+#include "buttons.h"
+#include "nesting.h"
+#include "form.h"
 #include "calculator.h"
-
+#include "review.h"
 
 class Absolute : public QWidget {
 public:
@@ -27,10 +27,10 @@ int main(int argc, char *argv[]) {
 //    Buttons window;
 //    Layouts window;
 //    FormEx window;
-    Calculator window;
-//    window.resize(300,300);
-    window.move(300,300);
-    window.setWindowTitle("Form example");
+//    Calculator window;
+    Review window;
+//    window.move(300,300);
+    window.setWindowTitle("Review example");
     window.show();
 
     return app.exec();
