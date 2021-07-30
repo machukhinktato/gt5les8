@@ -4,7 +4,9 @@
 //#include "verticalbox.h"
 //#include "buttons.h"
 //#include "nesting.h"
-#include "form.h"
+//#include "form.h"
+#include "calculator.h"
+
 
 class Absolute : public QWidget {
 public:
@@ -24,7 +26,10 @@ int main(int argc, char *argv[]) {
 //    VerticalBox window;
 //    Buttons window;
 //    Layouts window;
-    FormEx window;
+//    FormEx window;
+    Calculator window;
+//    window.resize(300,300);
+    window.move(300,300);
     window.setWindowTitle("Form example");
     window.show();
 
